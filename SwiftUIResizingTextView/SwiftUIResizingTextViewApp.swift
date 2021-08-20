@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftUIResizingTextViewApp: App {
+    
+    let obj = Observed()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(obj)
         }
     }
 }
